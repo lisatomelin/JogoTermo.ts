@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Nunito+Sans:opsz,wght@6..12,200&family=Tilt+Prism&family=Ubuntu:wght@300;400;500&display=swap');
+body,
+html {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(ellipse at 50% 50%, rgb(178, 213, 236), rgb(46, 126, 179));
+  color: #ffffff;
+}
+
+.conteudo {
+  padding: 1%;
+
+  gap: 10px;
+
+  display: grid;
+  place-items: center;
+}
+
+.grid-termo {
+  display: grid;
+  grid-template-rows: repeat(5, 65px);
+  gap: 7px;
+
+  margin-bottom: 2%;
+}
+
+.titulo {
+  font-family: 'Black Ops One', cursive;;
+  font-size: 35px; 
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.grid-termo>.linha {
+  display: grid;
+  grid-template-columns: repeat(5, 65px);
+  gap: 7px;
+}
+
+.grid-termo>.linha>.coluna {
+  display: grid;
+  place-items: center;
+  height: 100%;
+
+  background-color: #bebebe;
+  color: #2e2e2e;
+  border-radius: 3px;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.coluna-selecionada {
+  border: 1px solid rgb(17, 0, 255);
+}
+
+.linha-selecionada {
+  border: 1px dashed red;
+}
+
+.grid-teclado {
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+  gap: 2.2px;
+}
+
+button {
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  transition-duration: 0.4s
+}
+
+button:hover {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.btn-reiniciar{
+
+  background-color: rgb(46, 126, 179);
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  display: flex;
+  font-size: 16px;
+  margin: 4px 4px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.btn-reiniciar{
+
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(46, 126, 179);
+}
+
+.btn-reiniciar:hover{
+
+  background-color: rgb(46, 126, 179);
+  color: white;
+}
+
+.grid-teclado>.btn-enter {
+  grid-column: 2 span;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+
+#divMensagemFinal{
+  gap: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.letra-correta{
+  background-color: green !important;
+}
+
+.letra-posicao-incorreta{
+  background-color: rgb(243, 239, 12) !important;
+}
+
+.letra-nao-existente{
+  background-color: rgb(138, 146, 153) !important;
+}
+
+.display-none{
+  display: none !important;
+}
+
+.cor-cinza{
+  background-color: #e3d4d4 !important;
+}
+
+.jogador-perdeu{
+  color: #ee1414 !important;
+}
+
+.jogaor-ganhou{
+  color: #085830 !important;
+}
